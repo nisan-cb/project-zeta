@@ -34,5 +34,5 @@ These targets are either [inferred automatically](https://nx.dev/concepts/inferr
 ## Generate a library
 
 ```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+npx nx g @nx/js:lib packages/pkg1 --buildable --importPath=@my-org/pkg1
 ```
