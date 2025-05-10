@@ -8,6 +8,9 @@
         },
         {
             "path": "./packages/libs/lib2"
+        },
+        {
+            "path": "./packages/libs/db"
         }
     ]
 }
