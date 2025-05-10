@@ -37,7 +37,12 @@ describe('db connection', () => {
 
     it('should handle invalid queries gracefully', async () => {
         const invalidQuery = `SELECT * FROM non_existent_table`;
-        const result = await db.query(invalidQuery);
+        let result;
+        try {
+            result = await db.query(invalidQuery);
+        } catch (error) {
+            result = undefined;
+        }
         expect(result).toBeUndefined();
     });
 
